@@ -30,8 +30,13 @@ header{
     padding-block: 8px;
     background-color: var(--brand-color);
     color: rgba(255, 255, 255, 0.902);
-    position: fixed;
+    position: fixed;  /* Keeps header fixed */
+    top: 0;           /* Fixes it to the top */
+    left: 0;          /* Aligns it to the left */
+    width: 100%;      /* Ensures it spans the full width */
+    z-index: 1000;    /* Ensures it's above other elements */
 }
+
 /* 
 header h1{
     border: 2px solid blue;
@@ -72,6 +77,7 @@ header nav ul li a:hover{
     flex-direction: column;
     justify-content: flex-end;
     padding: 28px;
+    margin-top: 60px
 }
 
 #container-main p{
@@ -252,6 +258,5 @@ footer{
         width: 300px;
         height: 300px;
     }
-
 
 }
