@@ -30,6 +30,7 @@ header{
     padding-block: 8px;
     background-color: var(--brand-color);
     color: rgba(255, 255, 255, 0.902);
+    position: fixed;
 }
 /* 
 header h1{
